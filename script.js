@@ -20,11 +20,12 @@ const showData = (datas) => {
     console.log(datas[0])
     result.innerHTML = `
         <img src=${flags.png} alt="flug">
-        <h3 class="text-4xl font-semibold">${name.official}</h3>
+        <h3 class="text-2xl font-semibold">${name.official}</h3>
         <div class="text-left">
             <p>${continents}</p>
             <p>${Object.keys(currencies)}</p>
         </div>
+        <button class="border border-1 bg-purple-600 py-3 text-white">See more Deteils</button>
     `
     document.getElementById('countrys_warper').innerText = ' ';
     countryWarper.appendChild(result)
